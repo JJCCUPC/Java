@@ -19,22 +19,6 @@ public class Clase_No_2 {
         
         System.out.println("El nombre es: " + nom);        
         
-/*------------------------------------------------------------------------------*/        
-        try{
-            System.out.println("Ingrese un numero: ");
-            a=Integer.parseInt(lea.readLine() );
-        
-         System.out.println("Ingrese una numero: ");
-         b=Integer.parseInt(lea.readLine() );
-        
-         su = a + b;        
-         System.out.println("La suma de a y b es: " + su);
-        }
-/*------------------------------------------------------------------------------*/        
-        catch(NumberFormatException e){
-             System.out.println("Ingrese un numero: ");
-        }
-      
 /*------------------------------------------------------------------------------*/
 
         System.out.println("Ingrese un numero: ");
