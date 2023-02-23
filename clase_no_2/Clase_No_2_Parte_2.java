@@ -12,8 +12,10 @@ public class Clase_No_2_Parte_2 {
             lea=new BufferedReader(new InputStreamReader(System.in));
         String nom;
         
-        //Int b, a, su;
+        
         float b,a, su;
+        //Int b, a, su;
+        //Double b, a, su;
 /*------------------------------------------------------------------------------*/        
         System.out.println("Ingrese un nombre: ");
         nom=lea.readLine();
@@ -24,12 +26,14 @@ public class Clase_No_2_Parte_2 {
         try{
             System.out.println("Ingrese un numero: ");
             a=Float.parseFloat(lea.readLine() );
-        //Integrer.parseInt
-         System.out.println("Ingrese una numero: ");
-         b=Float.parseFloat(lea.readLine() );
-        //Integrer.parseInt
-         su = a + b;        
-         System.out.println("La suma de a y b es: " + su);
+            //Integrer.parseInt
+            //Double.parseDouble
+            System.out.println("Ingrese una numero: ");
+            b=Float.parseFloat(lea.readLine() );
+            //Integrer.parseInt
+            //Double.parseDouble
+            su = a + b;        
+            System.out.println("La suma de a y b es: " + su);
         }
 /*------------------------------------------------------------------------------*/        
         catch(NumberFormatException e){
