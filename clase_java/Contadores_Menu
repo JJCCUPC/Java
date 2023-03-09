@@ -1,0 +1,63 @@
+public class ciclosRepetitivos {
+    
+    void Contador(){
+        JTextArea area=new JTextArea(20,40);
+        
+        area.setText("Contador: \n");
+        int n = Integer.parseInt(JOptionPane.showInputDialog("Hasta donde desea contar?"));
+        
+        for(int cont = 1; cont <= n; cont++){
+            area.append(cont+"\n");
+        }
+        JOptionPane.showInputDialog(null, area);
+        
+        JScrollPane scrollPane = new JScrollPane(area);
+        JOptionPane.showMessageDialog(null, scrollPane);
+    }
+    
+    void Contador2(){
+        JTextArea salida = new JTextArea(30, 50);
+        salida.setText("Contador\n");
+        int n, cont;
+        n = Integer.parseInt(JOptionPane.showInputDialog("hasta cuando desea contar?"));
+        cont = 1;
+
+        do {
+            salida.append(cont + "\n");
+            cont++;
+        } while (cont <= n); 
+        JScrollPane scrollPane = new JScrollPane(salida);
+        JOptionPane.showMessageDialog(null, scrollPane);
+    }
+    
+    public static void main(String[] args) {
+        ciclosRepetitivos ob=new ciclosRepetitivos();
+        
+                try {
+                    int opcion = 0;
+
+            while (opcion != 2) {
+
+                opcion = Integer.parseInt(JOptionPane.showInputDialog(null, "SELECCIONE UNA OPCION\n\n"
+                        + "1. CONTAR (For)\n"
+                        + "2. CONTAR (DoWhile)\n"
+                        + "3. SALIR"));
+
+                switch (opcion) {
+                    case 1:
+                        ob.Contador();
+                        break;
+                    case 2:
+                        ob.Contador2();
+                        break;
+                    case 3:
+                        break;
+                }
+
+            }
+
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "usted ingreso una letra\n porfavor elija una opcion valida");
+        }  
+    }
+}
